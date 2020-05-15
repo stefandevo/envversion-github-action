@@ -1,0 +1,24 @@
+name: "Set .env Version"
+description: "Sets the version in .env file by yyyy.mm.dd.x where x is the next build"
+inputs:
+  env-file:
+    description: "Env file"
+    required: true
+  env-key:
+    description: "Key in the Env file"
+    required: true
+  suffix:
+    description: "For example 'beta'; can be left empty"
+    required: false
+  build:
+    description: "Build number to use; can be left empty. You could use the GITHUB_RUN_NUMBER env var for this."
+    required: false
+  offset:
+    description: "To use with build parameter; it adds offset to build (when coming from other build-system)"
+    required: false
+outputs:
+  version:
+    description: "The new version"
+runs:
+  using: "node12"
+  main: "index.js"

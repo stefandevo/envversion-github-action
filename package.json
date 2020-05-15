@@ -1,0 +1,21 @@
+{
+  "name": "envversion-github-action",
+  "version": "1.0.0",
+  "description": "Github Action for settings version in .env",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefandevo/envversion-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stefandevo/envversion-github-action/issues"
+  },
+  "homepage": "https://github.com/stefandevo/envversion-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3"
+  }
+}
